@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        function account(str) {
+            expres = /^[-_+(0-9a-z)]{6,}$/;
+            console.log(expres.test(str))
+        }
+
+        account("123abc-");
+        account("_abc123");
+        account("______");
+        account("123456");
+        console.log("Sai");
+        account("12345");
+        account("1234_");
+        account(".@");
+
+    </script>
+</body>
+</html>
